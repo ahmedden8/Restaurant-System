@@ -1,0 +1,20 @@
+<html>
+<head><title>Store Manager Home Page</title></head>
+<body>
+
+
+<div id="main">
+    <h1>Statistics Page</h1>
+    <a href="/homepage.html"><b>Homepage</b></a>
+    <a href="/orderform.html"><b>Orderform</b></a>
+    <a href="/statisticspage.html"><b>Statistics</b></a>
+    <ul>
+        <% for(let key in restauranttotals){ %>
+        <li><h3><%= key %> : <br> Total Orders = <%= restauranttotals[key].ordertotal %> <br> Most Sold Item:  <%= restauranttotals[key].mpi %></h3></li>
+        <%} %>
+    </ul>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+html
+    head
+        title HELLO - #{"DFDSF"}
+        |Welcome to the restaurants's name page!
+        br
+        a(href="/") #{"Homepage"}
+        a(href="/restaurants") #{"Restaurant Names"}
+        a(href="/addrestaurant") #{"Add Restaurant"}
+body
+    br
+    br
+    br
+    each val in restaurantids
+        |Name:
+        a(href="/restaurants/"+val.id) #{val.name}
+        br
